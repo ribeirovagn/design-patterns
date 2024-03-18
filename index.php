@@ -1,3 +1,4 @@
 <?php
 
-echo " [*] Vagner Ribeiro";
+// Register the Composer autoloader...
+require __DIR__ . '/vendor/autoload.php';
