@@ -1,0 +1,10 @@
+# docker-compose.dev.yaml
+version: '3.4'
+
+services:
+  php:
+    image: ribeiro/php
+    build: .
+    volumes:
+      - ./:/usr/src/myapp
+    restart: always
