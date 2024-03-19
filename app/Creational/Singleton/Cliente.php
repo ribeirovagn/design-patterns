@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../../../../index.php';
+require_once __DIR__ . '/../../../index.php';
 
-use App\DesignPatterns\Creational\Singleton\Singleton;
+use App\Creational\Singleton\Singleton;
 
 $singleton1 = Singleton::getInstance();
 $singleton2 = Singleton::getInstance();

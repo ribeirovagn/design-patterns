@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . "/../../../../index.php";
+require_once __DIR__ . "/../../../index.php";
 
-use App\DesignPatterns\Behavioral\Command\Light;
-use App\DesignPatterns\Behavioral\Command\RemoteControl;
-use App\DesignPatterns\Behavioral\Command\TurnOffCommand;
-use App\DesignPatterns\Behavioral\Command\TurnOnCommand;
+use App\Behavioral\Command\Light;
+use App\Behavioral\Command\RemoteControl;
+use App\Behavioral\Command\TurnOffCommand;
+use App\Behavioral\Command\TurnOnCommand;
 
 /**
  * 

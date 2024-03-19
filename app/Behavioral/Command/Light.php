@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DesignPatterns\Behavioral\Command;
+namespace App\Behavioral\Command;
 
 /**
  * 

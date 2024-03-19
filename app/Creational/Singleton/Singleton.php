@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DesignPatterns\Creational\Singleton;
+namespace App\Creational\Singleton;
 
 class Singleton
 {
