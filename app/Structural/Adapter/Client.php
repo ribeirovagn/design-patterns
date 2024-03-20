@@ -2,14 +2,17 @@
 
 require __DIR__ . '/../../../index.php';
 
-use App\Structural\Adapter\LegacySocket;
-use App\Structural\Adapter\TreePinSocketAdapter;
-use App\Structural\Adapter\TreePinSocket;
+use App\Structural\Adapter\LegacyPlug;
+use App\Structural\Adapter\ModernPlug;
+use App\Structural\Adapter\ModernPlugAdapter;
 
 echo " [*] Iniciando...\n";
 
-$tomadaAntiga = new LegacySocket();
+$tomadaAntiga = new LegacyPlug();
 $tomadaAntiga->plug();
-$tomadaModerna = new TreePinSocket();
-$adaptador = new TreePinSocketAdapter($tomadaModerna);
+
+echo " [*] Adaptando...\n";
+
+$tomadaModerna = new ModernPlug();
+$adaptador = new ModernPlugAdapter($tomadaModerna);
 $adaptador->plug();

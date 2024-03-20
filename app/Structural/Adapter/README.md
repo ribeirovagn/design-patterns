@@ -12,8 +12,8 @@
 
 ### Exemplo de Implementação:
 
-Suponha que você tem em sua casa uma tomada com 2 pinos `LegacySocket`, mas você precisa adaptar uma tomada com 3 pinos `TreePinSocket` para que ela também possa ser usada.  
+Suponha que você tem em sua casa uma tomada com 2 pinos `LegacySocket`, mas você precisa adaptar uma tomada com 3 pinos `ModernSocket` para que ela também possa ser usada.  
 
 Como resolver esse problema?
 
-A classe `TreePinSocketAdapter` atua como um adaptador entre `TreePinSocket` e `LegacySocket`, permitindo que uma instância de `TreePinSocket` seja usada onde um `LegacySocket` é esperado. Isso demonstra o uso prático do padrão Adapter para interoperabilidade entre classes com interfaces incompatíveis.
+A classe `ModernPlugAdapter` atua como um adaptador entre `ModernSocket` e `LegacySocket`, permitindo que uma instância de `ModernSocket` seja usada onde um `LegacySocket` é esperado. Isso demonstra o uso prático do padrão Adapter para interoperabilidade entre classes com interfaces incompatíveis.

@@ -6,12 +6,9 @@ namespace App\Structural\Adapter;
 
 /**
  * 
- * Simula uma tomada antiga (2 pinos)
+ * Simula uma tomada morderna (3 pinos)
  */
-class LegacySocket implements Socket
+interface LegacySocket
 {
-    public function plug(): void
-    {
-        echo " [*] Tomada antiga (2 pinos)\n";
-    }
+    public function plug(): void;
 }
