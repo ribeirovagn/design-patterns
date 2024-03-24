@@ -19,3 +19,24 @@ if (
 } else {
     echo " [ ] :( As instâncias são diferentes\n";
 }
+
+
+echo "\n [*] Testando se o numero aleatorio é o mesmo em ambas as instâncias\n";
+
+$singleton4->setRandNumber();
+
+$randNumber1 = $singleton1->getRandNumber();
+$randNumber2 = $singleton2->getRandNumber();
+$randNumber3 = $singleton3->getRandNumber();
+$randNumber4 = $singleton4->getRandNumber();
+
+if ($randNumber1 === $randNumber4) {
+    echo " [*] É o mesmo numero\n";
+} else {
+    echo " [ ] É o mesmo numero\n";
+}
+
+echo "     * Intancia 1 = " . $randNumber1 . "\n";
+echo "     * Intancia 2 = " . $randNumber2 . "\n";
+echo "     * Intancia 3 = " . $randNumber3 . "\n";
+echo "     * Intancia 4 = " . $randNumber4 . "\n";

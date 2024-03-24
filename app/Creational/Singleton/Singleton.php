@@ -6,6 +6,8 @@ namespace App\Creational\Singleton;
 
 class Singleton
 {
+
+    private $randNumber;
     /**
      *
      * A própria classe mantém uma instância estática de si mesma.
@@ -53,5 +55,15 @@ class Singleton
         }
 
         return self::$instances[$cls];
+    }
+
+    public function setRandNumber()
+    {
+        $this->randNumber = rand(1, 10000);
+    }
+
+    public function getRandNumber()
+    {
+        return $this->randNumber;
     }
 }
