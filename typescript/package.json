@@ -10,7 +10,8 @@
   "author": "Vagner Ribeiro",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "command": "ts-node src/Behavioral/Command/Client.ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.1",

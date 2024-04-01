@@ -1,3 +1,10 @@
+/**
+ * 
+ * Receiver class
+ * Sabe como executar as operações associadas a uma solicitação. 
+ * Qualquer classe pode servir como Receptor.
+ */
+
 export default class Light {
 
     private status: string = "";

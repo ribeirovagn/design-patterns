@@ -6,10 +6,11 @@ import TurnOnCommand from "./TurnOnCommand";
 const light = new Light();
 
 const turnOnCommand = new TurnOnCommand(light);
-const turnOffCommand = new TurnOffCommand(light);
-
-const remoteControll = new RemoteControl(turnOnCommand);
-remoteControll.pressButton();
-
+const turnOnButton = new RemoteControl(turnOnCommand);
+turnOnButton.pressButton();
 console.log(light.getStatus());
 
+const turnOffCommand = new TurnOffCommand(light);
+const turnOffButton = new RemoteControl(turnOffCommand);
+turnOffButton.pressButton();
+console.log(light.getStatus());
