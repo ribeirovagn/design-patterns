@@ -19,5 +19,16 @@
     },
     "config": {
         "optimize-autoloader": true
+    },
+    "scripts": {
+        "behavioral": {
+            "command": "php app/Behavioral/Command/Client.php"
+        },
+        "creational": {
+            "singleton": "php app/Creational/Singleton/Client.php"
+        },
+        "structural": {
+            "adapter": "php app/Structural/Adapter/Client.php"
+        }
     }
 }

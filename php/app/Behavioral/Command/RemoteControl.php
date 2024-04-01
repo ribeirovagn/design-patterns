@@ -10,7 +10,7 @@ namespace App\Behavioral\Command;
  */
 class RemoteControl
 {
-    private $command;
+    private Command $command;
 
     public function setCommand(Command $command)
     {

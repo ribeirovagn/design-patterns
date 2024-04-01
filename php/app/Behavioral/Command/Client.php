@@ -16,6 +16,8 @@ use App\Behavioral\Command\TurnOnCommand;
  */
 $light = new Light();
 
+echo "\n\nCOMMAND Pattern \n\n";
+
 $turnOnCommand = new TurnOnCommand($light);
 $turnOffcommand = new TurnOffCommand($light);
 $remoteControl = new RemoteControl();
@@ -27,3 +29,5 @@ $remoteControl->pressButton();
 // Desliga a luz
 $remoteControl->setCommand($turnOffcommand);
 $remoteControl->pressButton();
+
+echo "\n=====================================\n";

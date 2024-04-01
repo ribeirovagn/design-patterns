@@ -6,6 +6,8 @@ use App\Structural\Adapter\LegacyPlug;
 use App\Structural\Adapter\ModernPlug;
 use App\Structural\Adapter\ModernPlugAdapter;
 
+echo "\nADAPTER Pattern \n\n";
+
 echo " [*] Iniciando...\n";
 
 $tomadaAntiga = new LegacyPlug();
@@ -16,3 +18,5 @@ echo " [*] Adaptando...\n";
 $tomadaModerna = new ModernPlug();
 $adaptador = new ModernPlugAdapter($tomadaModerna);
 $adaptador->plug();
+
+echo "\n=====================================\n";
