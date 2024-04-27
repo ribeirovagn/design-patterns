@@ -11,7 +11,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "command": "ts-node src/Behavioral/Command/Client.ts"
+    "behavioral:command": "ts-node src/Behavioral/Command/Client.ts",
+    "structural:facade": "ts-node src/Structural/Facade/Client.ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.1",
